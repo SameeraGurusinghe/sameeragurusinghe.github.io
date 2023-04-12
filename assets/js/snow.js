@@ -7,12 +7,12 @@
 var snowMax = 20;
 
 // Snowflake Colours
-// var snowColor = ["#FFFF00", "#FFFF00"];
-var snowColor = ["#DDD", "#EEE"];
+var snowColor = ["#FFFF00", "#FFFF00"];
+// var snowColor = ["#DDD", "#EEE"];
 
 // Snow Entity
-// var snowEntity = "&#x2600;";
-var snowEntity = "&#x2022;";
+var snowEntity = "&#x2600;";
+// var snowEntity = "&#x2022;";
 
 // Falling Velocity
 var snowSpeed = 0.75;
