@@ -2,14 +2,11 @@
 <html lang="en">
 
 <head>
-
-  <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-6ZMW6CJBGQ"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-6ZMW6CJBGQ');
   </script>
 
@@ -17,95 +14,314 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Sameera Gurusinghe | Full-Stack Developer Portfolio</title>
-  <meta name="description" content="Explore Sameera Gurusinghe's portfolio, showcasing full-stack development expertise in React, Node.js, PHP and Laravel along with database design and RESTful APIs. Available for freelance and part-time projects.">
-  <meta name="keywords" content="Sameera Gurusinghe, portfolio, full-stack developer, React, Node.js, PHP, Laravel, web development, database design, RESTful APIs">
+  <title>Sameera Gurusinghe | Software Engineer | Laravel · Node.js · React</title>
+  <meta name="description" content="Sameera Gurusinghe is a Software Engineer at Efito Solutions with 3+ years of experience building full-stack web applications and REST APIs for international clients in the USA and Germany. Specialising in Laravel, Node.js, React, MySQL, and third-party API integrations.">
+  <meta name="keywords" content="Sameera Gurusinghe, Software Engineer, Full-Stack Developer, Laravel, Node.js, React, MySQL, MongoDB, RESTful API, eBay API, UPS API, Fishbowl ERP, Efito Solutions, Sri Lanka developer, web developer Sri Lanka">
+  <meta name="author" content="Sameera Gurusinghe">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://sameeragurusinghe.github.io/">
 
-  <!-- Google Fonts -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://sameeragurusinghe.github.io/">
+  <meta property="og:title" content="Sameera Gurusinghe | Software Engineer">
+  <meta property="og:description" content="Software Engineer with 3+ years of experience building full-stack web applications for international clients. Laravel · Node.js · React · MySQL.">
+  <meta property="og:image" content="https://sameeragurusinghe.github.io/assets/img/profile.jpg">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Sameera Gurusinghe | Software Engineer">
+  <meta name="twitter:description" content="Software Engineer with 3+ years building full-stack apps for global clients. Laravel · Node.js · React.">
+  <meta name="twitter:image" content="https://sameeragurusinghe.github.io/assets/img/profile.jpg">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Sameera Gurusinghe",
+    "jobTitle": "Software Engineer",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Efito Solutions (Pvt) Ltd."
+    },
+    "url": "https://sameeragurusinghe.github.io/",
+    "sameAs": [
+      "https://www.linkedin.com/in/sameeragurusinghe",
+      "https://github.com/sameeragurusinghe"
+    ],
+    "knowsAbout": ["Laravel", "Node.js", "React", "MySQL", "MongoDB", "RESTful API", "Full-Stack Development"],
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "Uva Wellassa University of Sri Lanka"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "LK"
+    }
+  }
+  </script>
+
+  <meta name="google-site-verification" content="oLzR3gwIyy2uesXUNwbq5harSB6SQllF6zwD-RBmlJU" />
+
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
-  <meta name="google-site-verification" content="oLzR3gwIyy2uesXUNwbq5harSB6SQllF6zwD-RBmlJU" />
+  <style>
+    #professional-skills {
+      background: transparent;
+    }
+
+    .skill-category-card {
+      background: #09203a;
+      border-radius: 10px;
+      padding: 24px 20px;
+      margin-bottom: 20px;
+      border-left: 3px solid #12d640;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .skill-category-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 24px rgba(18, 214, 64, 0.15);
+    }
+
+    .skill-category-card h5 {
+      color: #12d640;
+      font-family: "Poppins", sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+
+    .skill-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .skill-tag {
+      background: rgba(18, 214, 64, 0.08);
+      color: #dee2e6;
+      border: 1px solid rgba(18, 214, 64, 0.2);
+      border-radius: 20px;
+      padding: 4px 14px;
+      font-size: 13px;
+      font-family: "Open Sans", sans-serif;
+      transition: all 0.2s ease;
+    }
+
+    .skill-tag:hover {
+      background: rgba(18, 214, 64, 0.2);
+      border-color: #12d640;
+      color: #12d640;
+    }
+
+    .skill-tag.highlight {
+      background: rgba(18, 214, 64, 0.15);
+      border-color: #12d640;
+      color: #12d640;
+      font-weight: 600;
+    }
+
+    .exp-company {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    .exp-role-badge {
+      display: inline-block;
+      background: rgba(18, 214, 64, 0.12);
+      color: #12d640;
+      border: 1px solid rgba(18, 214, 64, 0.3);
+      border-radius: 4px;
+      padding: 2px 10px;
+      font-size: 13px;
+      font-weight: 600;
+      margin-right: 8px;
+      margin-bottom: 6px;
+    }
+
+    .exp-period {
+      color: #adb5bd;
+      font-size: 13px;
+      font-style: italic;
+    }
+
+    .exp-description {
+      color: #b1a9a9;
+      font-size: 14px;
+      margin: 10px 0 8px 0;
+      line-height: 1.6;
+    }
+
+    .exp-bullets {
+      padding-left: 18px;
+      margin: 0;
+    }
+
+    .exp-bullets li {
+      color: #dee2e6;
+      font-size: 14px;
+      margin-bottom: 6px;
+      line-height: 1.55;
+    }
+
+    .exp-tech-stack {
+      margin-top: 10px;
+    }
+
+    .tech-pill {
+      display: inline-block;
+      background: #042b56;
+      color: #7ec8e3;
+      border-radius: 3px;
+      padding: 2px 8px;
+      font-size: 12px;
+      margin: 2px 3px 2px 0;
+      font-family: monospace;
+    }
+
+    .promotion-badge {
+      display: inline-block;
+      background: linear-gradient(90deg, #1c7d32, #12d640);
+      color: #fff;
+      border-radius: 3px;
+      padding: 2px 8px;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      margin-left: 8px;
+      vertical-align: middle;
+    }
+
+    .about-bio {
+      font-size: 15px;
+      line-height: 1.75;
+      color: #dee2e6;
+    }
+
+    .about-bio a {
+      color: #12d640;
+      text-decoration: none;
+    }
+
+    .stat-box {
+      background: #09203a;
+      border-radius: 8px;
+      padding: 16px;
+      text-align: center;
+      margin-bottom: 12px;
+      border-top: 2px solid #12d640;
+    }
+
+    .stat-box .stat-number {
+      font-size: 28px;
+      font-weight: 700;
+      color: #12d640;
+      font-family: "Poppins", sans-serif;
+      line-height: 1;
+    }
+
+    .stat-box .stat-label {
+      font-size: 12px;
+      color: #adb5bd;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-top: 4px;
+    }
+  </style>
 
 </head>
 
 <body>
 
-  <!-- ======= Header ======= -->
   <header id="header" class="header-tops" style="background-image: url('assets/img/index.png'); background-size: cover;">
-
     <div class="container">
-
       <h1><a href="index.html">Sameera Gurusinghe</a></h1>
       <h2 style="color:#fff"><span class="typing" style="color:#12D640"></span></h2>
       <nav class="nav-menu d-none d-lg-block">
         <ul>
           <li class="active"><a href="#header"><span>Home</span></a></li>
           <li><a href="#about"><span>About</span></a></li>
+          <li><a href="#professional-skills"><span>Skills</span></a></li>
           <li><a href="#education"><span>Education</span></a></li>
           <li><a href="#experience"><span>Experience</span></a></li>
           <li><a href="#portfolio"><span>Projects</span></a></li>
-          <li><a href="#skills"><span>Skills</span></a></li>
           <li><a href="#contacts"><span>Contact</span></a></li>
         </ul>
       </nav>
-      <!-- .nav-menu -->
-
       <div class="social-links">
-          <a href="https://www.linkedin.com/in/sameeragurusinghe" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-          <a href="https://www.github.com/sameeragurusinghe" target="_blank" class="github"><i class="bx bxl-github"></i></a>
-          <a href="https://www.twitter.com/sameeragurus" target="_blank" class="twitter"><i class="bx bxl-twitter"></i></a>
-          <a href="https://www.facebook.com/sameeragurusinghe" target="_blank" class="facebook"><i class="bx bxl-facebook"></i></a>
-          <a href="https://www.instagram.com/sameera_gurusinghe" target="_blank" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/sameeragurusinghe" target="_blank" class="linkedin" aria-label="LinkedIn"><i class="bx bxl-linkedin"></i></a>
+        <a href="https://www.github.com/sameeragurusinghe" target="_blank" class="github" aria-label="GitHub"><i class="bx bxl-github"></i></a>
+        <a href="https://www.twitter.com/sameeragurus" target="_blank" class="twitter" aria-label="Twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="https://www.facebook.com/sameeragurusinghe" target="_blank" class="facebook" aria-label="Facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="https://www.instagram.com/sameera_gurusinghe" target="_blank" class="instagram" aria-label="Instagram"><i class="bx bxl-instagram"></i></a>
       </div>
-
     </div>
   </header>
-  <!-- End Header -->
 
-  <!-- ======= About Section ======= -->
   <section id="about" class="about">
 
-    <!-- ======= About Me ======= -->
     <div class="about-me container">
-
       <div class="section-title">
-        <h2>About</h2>
+        <h2>About Me</h2>
       </div>
 
       <div class="row">
         <div class="col-lg-4" data-aos="fade-right">
-          <img src="assets/img/profile.jpg" class="img-fluid rounded-circle" alt="Profile Image" data-toggle="tooltip" data-placement="bottom" title="This photo was taken on July, 2024 at Balagala Tea Garden, Akuressa, Sri Lanka.">
+          <img src="assets/img/profile.jpg" class="img-fluid rounded-circle" alt="Sameera Gurusinghe - Software Engineer at Efito Solutions, Sri Lanka" data-toggle="tooltip" data-placement="bottom" title="Photo taken at Balagala Tea Garden, Akuressa, Sri Lanka.">
+
+          <div class="row mt-4">
+            <div class="col-6">
+              <div class="stat-box">
+                <div class="stat-number">3+</div>
+                <div class="stat-label">Years Exp.</div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="stat-box">
+                <div class="stat-number">5+</div>
+                <div class="stat-label">Int'l Projects</div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="stat-box">
+                <div class="stat-number">2</div>
+                <div class="stat-label">Countries</div>
+              </div>
+            </div>
+          </div>
         </div>
+
         <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-          <p>👋 Hello! I'm Sameera Gurusinghe, a motivated and enthusiastic software engineer with a passion for learning and problem-solving. Currently serving as a Software Engineer at <a href="https://efitosolutions.com/">Efito Solutions</a>,
-            I thrive in dynamic environments where I can apply my expertise in a variety of programming languages and tools, including ReactJs, NodeJs, Laravel, PHP, MySQL, MongoDB, and more.<br><br>
-            During my tenure as an Intern Software Engineer at <a href="https://zincat.net/">Zincat Technology</a>, I actively contributed to several impactful projects, gaining invaluable experience and insights along the way.<br><br>
-            Beyond the office, I'm a dedicated lifelong learner, constantly seeking opportunities to broaden my skills and stay ahead of the curve in the ever-evolving field of software engineering. In my free time, I often explore new destinations, indulging my passion for travel, or enjoy a relaxing picnic in nature.
-          </p><br>
-          <div class="row">
+
+          <p class="about-bio">
+            Hi, I'm <strong>Sameera Gurusinghe</strong>, a Software Engineer with 3+ years of experience building scalable full-stack web applications and API-driven systems for international clients across the <strong>USA</strong> and <strong>Germany</strong>.<br><br>
+            I currently work at <a href="https://efitosolutions.com/" target="_blank">Efito Solutions</a>, where I was promoted to Software Engineer and lead end-to-end development across e-commerce, healthcare, and restaurant domains. My work spans backend architecture with <strong>Laravel</strong> and <strong>Node.js</strong>, frontend development with <strong>React.js</strong>, complex third-party integrations including <strong>eBay API, UPS Shipping</strong>, and <strong>Fishbowl ERP</strong>, and server configuration and deployment on <strong>Linux</strong>.<br><br>
+            I enjoy solving problems that sit at the intersection of clean code and real business impact. When I'm not coding, I'm exploring new places or enjoying the outdoors — always curious, always learning.
+          </p>
+
+          <div class="row mt-3">
             <div class="col-lg-7">
               <ul>
                 <li><i class="icofont-birthday-cake"></i> 12<sup>th</sup> October</li>
-                <li><i class="icofont-location-pin"></i> Elpitiya, Southern Province, LK</li>
-                <li><i class="icofont-university"></i> Uva Wellassa University of Sri Lanka (Graduated)</li>
+                <li><i class="icofont-location-pin"></i> Elpitiya, Southern Province, Sri Lanka</li>
+                <li><i class="icofont-university"></i> Uva Wellassa University of Sri Lanka</li>
                 <li><i class="icofont-earth"></i> Sri Lankan</li>
                 <li><i class="icofont-hand"></i> Buddhism</li>
               </ul>
             </div>
             <div class="col-lg-5">
               <ul>
-                <li><i class="icofont-smirk"></i><strong> Hobbies:</strong>
+                <li><i class="icofont-smirk"></i> <strong>Hobbies:</strong>
                   <ul class="ml-5">
                     <li><i class="icofont-notebook"></i> Collecting Stamps</li>
                     <li><i class="icofont-hill-side"></i> Mountain Climbing</li>
@@ -117,81 +333,226 @@
             </div>
           </div>
 
-          <div class="row col-lg-12 border p-2 bg-dark">
-            <span><i class="icofont-hour-glass"></i> My availability as an employee: &nbsp;
-              <!-- <button class="icofont-check-circled btn btn-success" href="#" data-toggle="tooltip" data-placement="right" title="I am available to work Monday through Friday, and I am very flexible about the start and end times on those days. I'm willing to make occasional additional hours work with my schedule, as I really value my weekend time with my family."> Available</button> -->
-              <button class="icofont-close-circled btn btn-warning btn-sm" href="#" data-toggle="tooltip" data-placement="right" title="I am currently unavailable as an employee."> Unavailable</button>
-              <p><small>Last updated on: <span id="date"></span></small></p>
+          <div class="row col-lg-12 border p-2 bg-dark mt-3">
+            <span><i class="icofont-hour-glass"></i>&nbsp; Availability as an employee: &nbsp;
+              <button class="icofont-close-circled btn btn-warning btn-sm" data-toggle="tooltip" data-placement="right" title="Currently unavailable as a full-time employee."> Unavailable</button>
+              <p><small>Last updated: <span id="date"></span></small></p>
             </span>
           </div><br>
 
           <div class="row col-lg-12 border p-2 bg-dark">
-            <span><i class="icofont-computer"></i> Current workplace: &nbsp;
-              <button class="btn btn-success btn-sm" href="#" data-toggle="tooltip" data-placement="right" title="I am working as an Software Engineer at Efito Solutions">Efito Solutions</button><br>
-              <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <small>Software Engineer</small>
-                        <small>November 2024 - Present</small>
-                    </div>
+            <div style="width:100%;">
+
+              <div style="display:flex; align-items:center; gap:8px; margin-bottom:14px;">
+                <i class="icofont-computer"></i>
+                <span style="font-size:13px; color:#adb5bd;">Current workplace</span>
+                <a href="https://efitosolutions.com/" target="_blank"
+                  style="margin-left:auto; background:rgba(28,125,50,0.15); color:#12d640;
+                          border:1px solid rgba(18,214,64,0.3); border-radius:4px;
+                          padding:3px 10px; font-size:12px; font-weight:600;
+                          text-decoration:none;">
+                  Efito Solutions ↗
+                </a>
+              </div>
+
+              <div style="position:relative; padding-left:20px;">
+                <div style="position:absolute; left:5px; top:6px; bottom:6px;
+                            width:1.5px; background:rgba(255,255,255,0.15);"></div>
+
+                <div style="position:relative; margin-bottom:18px;">
+                  <div style="position:absolute; left:-18px; top:4px; width:9px; height:9px;
+                              border-radius:50%; background:#1c7d32; border:2px solid #12d640;"></div>
+                  <div style="display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
+                    <span style="font-size:14px; font-weight:600; color:#fff;">Software Engineer</span>
+                    <span style="background:rgba(28,125,50,0.2); color:#12d640;
+                                border:1px solid rgba(18,214,64,0.3); border-radius:4px;
+                                padding:1px 8px; font-size:11px; font-weight:700;">↑ Promoted</span>
+                  </div>
+                  <div style="font-size:12px; color:#adb5bd; margin-top:3px;">November 2024 – Present</div>
+                  <div style="margin-top:6px; display:flex; flex-wrap:wrap; gap:5px;">
+                    <span style="background:#042b56; color:#7ec8e3; border-radius:3px; padding:2px 7px; font-size:11px; font-family:monospace;">Laravel</span>
+                    <span style="background:#042b56; color:#7ec8e3; border-radius:3px; padding:2px 7px; font-size:11px; font-family:monospace;">Node.js</span>
+                    <span style="background:#042b56; color:#7ec8e3; border-radius:3px; padding:2px 7px; font-size:11px; font-family:monospace;">React.js</span>
+                    <span style="background:#042b56; color:#7ec8e3; border-radius:3px; padding:2px 7px; font-size:11px; font-family:monospace;">Linux</span>
+                  </div>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <small>Associate Software Engineer</small>
-                        <small>April 2023 - September 2024</small>
-                    </div>
+
+                <div style="position:relative;">
+                  <div style="position:absolute; left:-18px; top:4px; width:9px; height:9px;
+                              border-radius:50%; background:#09203a; border:2px solid #adb5bd;"></div>
+                  <div style="font-size:14px; font-weight:600; color:#fff;">Associate Software Engineer</div>
+                  <div style="font-size:12px; color:#adb5bd; margin-top:3px;">April 2023 – October 2024</div>
+                  <div style="margin-top:6px; display:flex; flex-wrap:wrap; gap:5px;">
+                    <span style="background:#042b56; color:#7ec8e3; border-radius:3px; padding:2px 7px; font-size:11px; font-family:monospace;">Laravel</span>
+                    <span style="background:#042b56; color:#7ec8e3; border-radius:3px; padding:2px 7px; font-size:11px; font-family:monospace;">Node.js</span>
+                    <span style="background:#042b56; color:#7ec8e3; border-radius:3px; padding:2px 7px; font-size:11px; font-family:monospace;">MySQL</span>
+                    <span style="background:#042b56; color:#7ec8e3; border-radius:3px; padding:2px 7px; font-size:11px; font-family:monospace;">MongoDB</span>
+                  </div>
                 </div>
+
+              </div>
             </div>
-            </span>
-          </div><br>
+          </div>
 
           <div class="row col-lg-12 border p-2 bg-dark">
-            <span><i class="icofont-company"></i> Previous workplace(s): &nbsp;<br>
-              <small>Zincat Technology</small><br>
-              <small>Trainee Software Engineer</small><br>
-              <small>April 2022 - October 2022</small>
-              <!-- <hr> -->
+            <span><i class="icofont-company"></i>&nbsp; Previous workplace(s): &nbsp;<br>
+              <small>Zincat Technology — Trainee Software Engineer</small><br>
+              <small>April 2022 – October 2022</small>
             </span>
           </div>
 
         </div>
       </div>
-
     </div>
-    <!-- End About Me -->
 
-
-    <!-- ======= Interests ======= -->
     <div class="interests container">
-
       <div class="section-title">
         <h2>Interests</h2>
       </div>
-
       <div class="row">
         <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
           <div class="icon-box">
-            <i class="ri-dashboard-line" style="color: #1c7d32;"></i>
+            <i class="ri-dashboard-line" style="color:#1c7d32;"></i>
             <h3>Software Engineer</h3>
           </div>
         </div>
         <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
           <div class="icon-box">
-            <i class="ri-global-line" style="color: #5578ff;"></i>
+            <i class="ri-global-line" style="color:#5578ff;"></i>
             <h3>System Engineer</h3>
           </div>
         </div>
       </div>
-
     </div>
-    <!-- End Interests -->
+
   </section>
-  <!-- End About Section -->
 
+  <section id="professional-skills" class="services">
+    <div class="container">
+      <div class="section-title">
+        <h2>Skills</h2>
+        <p>Technical Skills</p>
+      </div>
 
-  <!-- ======= Education Section ======= -->
+      <div class="row">
+
+        <div class="col-lg-6">
+          <div class="skill-category-card">
+            <h5>⚙️ Backend Development</h5>
+            <div class="skill-tags">
+              <span class="skill-tag highlight">Laravel (PHP)</span>
+              <span class="skill-tag highlight">Node.js</span>
+              <span class="skill-tag highlight">Express.js</span>
+              <span class="skill-tag">RESTful API Design</span>
+              <span class="skill-tag">MVC Architecture</span>
+              <span class="skill-tag">Middleware & Auth</span>
+              <span class="skill-tag">PHP</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="skill-category-card">
+            <h5>🎨 Frontend Development</h5>
+            <div class="skill-tags">
+              <span class="skill-tag highlight">React.js</span>
+              <span class="skill-tag">JavaScript (ES6+)</span>
+              <span class="skill-tag">HTML5</span>
+              <span class="skill-tag">CSS3</span>
+              <span class="skill-tag">Bootstrap</span>
+              <span class="skill-tag">Responsive Design</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="skill-category-card">
+            <h5>🗄️ Database Management</h5>
+            <div class="skill-tags">
+              <span class="skill-tag highlight">MySQL</span>
+              <span class="skill-tag highlight">MongoDB</span>
+              <span class="skill-tag">Schema Design</span>
+              <span class="skill-tag">Query Optimization</span>
+              <span class="skill-tag">Database Modeling</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="skill-category-card">
+            <h5>🔗 API & Third-Party Integrations</h5>
+            <div class="skill-tags">
+              <span class="skill-tag highlight">eBay Marketplace API</span>
+              <span class="skill-tag highlight">UPS Shipping API</span>
+              <span class="skill-tag highlight">UPS Traking API</span>
+              <span class="skill-tag highlight">Fishbowl ERP</span>
+              <span class="skill-tag">Payment Gateways</span>
+              <span class="skill-tag">Zegocloud</span>
+              <span class="skill-tag">Close CRM</span>
+              <span class="skill-tag">Apollo.io</span>
+              <span class="skill-tag">Postman</span>
+              <span class="skill-tag">API Testing</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="skill-category-card">
+            <h5>🐧 DevOps & Deployment</h5>
+            <div class="skill-tags">
+              <span class="skill-tag highlight">Linux Server Config</span>
+              <span class="skill-tag highlight">VPS Deployment</span>
+              <span class="skill-tag">Git & GitHub</span>
+              <span class="skill-tag">SSH</span>
+              <span class="skill-tag">Version Control</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="skill-category-card">
+            <h5>🤖 AI-Assisted Development</h5>
+            <div class="skill-tags">
+              <span class="skill-tag highlight">Cursor AI</span>
+              <span class="skill-tag highlight">Claude AI</span>
+              <span class="skill-tag">ChatGPT</span>
+              <span class="skill-tag">AI Code Review</span>
+              <span class="skill-tag">Prompt Engineering</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="skill-category-card">
+            <h5>📱 Mobile & Other</h5>
+            <div class="skill-tags">
+              <span class="skill-tag">Flutter</span>
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">Java</span>
+              <span class="skill-tag">Machine Learning (basics)</span>
+              <span class="skill-tag">Figma</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="skill-category-card">
+            <h5>🤝 Soft Skills</h5>
+            <div class="skill-tags">
+              <span class="skill-tag highlight">Team Leadership</span>
+              <span class="skill-tag highlight">Client Communication</span>
+              <span class="skill-tag highlight">Problem Solving</span>
+              <span class="skill-tag">Fast Learner</span>
+              <span class="skill-tag">Attention to Detail</span>
+              <span class="skill-tag">Adaptability</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
   <section id="education" class="services">
     <div class="container">
       <div class="section-title">
@@ -229,189 +590,193 @@
           </div>
         </div>
       </div>
-
+    </div>
 
     <div class="portfolio">
-    <div class="container">
-      <div class="section-title">
-        <h2>Certification</h2>
-      </div>
-
-      <div class="row portfolio-container" style="position: relative; height: 437.75px;">
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app" style="position: absolute; left: 0px; top: 0px;">
-          <div class="portfolio-wrap">
-              <img src="assets/img/certification/ieee.png" class="img-fluid" alt="">
+      <div class="container">
+        <div class="section-title">
+          <h2>Certification</h2>
+        </div>
+        <div class="row portfolio-container" style="position:relative;height:437.75px;">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app" style="position:absolute;left:0;top:0;">
+            <div class="portfolio-wrap">
+              <img src="assets/img/certification/ieee.png" class="img-fluid" alt="IEEEXtreme 13.0 Programming Competition Certificate">
               <div class="portfolio-info">
                 <h4>IEEEXtreme 13.0 Programming Competition</h4>
                 <div class="portfolio-links">
-                  <a href="https://drive.google.com/file/d/1JZDSAS_csPt79hsArd7wWmmhPCPeJGJe/view?usp=sharing" target="_blank" title="Access Link for the Certificate"><i class="bx bx-link"></i></a>
+                  <a href="https://drive.google.com/file/d/1JZDSAS_csPt79hsArd7wWmmhPCPeJGJe/view?usp=sharing" target="_blank" title="View Certificate"><i class="bx bx-link"></i></a>
                 </div>
               </div>
             </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app" style="position: absolute; left: 0px; top: 0px;">
-          <div class="portfolio-wrap">
-              <img src="assets/img/certification/uom.png" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app" style="position:absolute;left:0;top:0;">
+            <div class="portfolio-wrap">
+              <img src="assets/img/certification/uwu.png" class="img-fluid" alt="EngHack Hackathon 2020 Certificate">
               <div class="portfolio-info">
-                <h4>Virtual Mini hackathon - HomeAlone2020</h4>
+                <h4>EngHack Hackathon 2020 — Top 5 Finalist</h4>
                 <div class="portfolio-links">
-                  <a href="https://drive.google.com/file/d/1gOEEE3RLEta1T6CXo8n3KCAkwHMkOxw8/view?usp=sharing" target="_blank" title="Access Link for the Certificate"><i class="bx bx-link"></i></a>
+                  <a href="#" target="_blank" title="View Certificate"><i class="bx bx-link"></i></a>
                 </div>
               </div>
             </div>
+          </div>
         </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app" style="position: absolute; left: 0px; top: 0px;">
-          <div class="portfolio-wrap">
-              <img src="assets/img/certification/uwu.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>EngHack Hackathon 2020</h4>
-                <div class="portfolio-links">
-                  <a href="#" target="_blank" title="Access Link for the Certificate"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-        </div>
-
       </div>
     </div>
-    </div>
-
   </section>
-  <!-- End Education Section -->
 
-
-  <!-- Start Experience Section -->
   <section id="experience" class="services">
     <div class="container">
       <div class="section-title">
         <h2>Industrial</h2>
+        <p>Work Experience</p>
       </div>
       <div class="row">
-          <div class="col-lg-12" data-aos="fade-up">
+        <div class="col-lg-12" data-aos="fade-up">
 
-              <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100">
-                <h4 style="text-align:left;"><a href="https://efitosolutions.com/" style="color:#12d640">Efito Solutions</a><br></h4>
-                <h5 style="text-align:left;color:#fff">Software Engineer</h5>
-                <p style="text-align:left;color:#fff"><em>November 2024 - Present</em></p>
-                <!-- <p style="text-align:left;color:#b1a9a9">Experiences:</p> -->
-                <ul style="text-align:left;">
-                  <!-- <li>Applied strong full-stack development skills using PHP with Laravel, including experience with MVC architecture, RESTful API development, routing, middleware, and authentication.</li> -->
-                </ul>
-                <hr>
-                <h5 style="text-align:left;color:#fff">Associate Software Engineer</h5>
-                <p style="text-align:left;color:#fff"><em>April 2023 - September 2024</em></p>
-                <p style="text-align:left;color:#b1a9a9">Experiences: </p>
-                <ul style="text-align:left;">
-                  <li>Applied strong full-stack development skills using PHP with Laravel, including experience with MVC architecture, RESTful API development, routing, middleware, and authentication.</li>
-                  <li>Contributed to database design, querying, and optimization to ensure efficient data management.</li>
-                  <li>Continuously improved problem-solving skills through the analysis of complex issues and the implementation of effective solutions.</li>
-                  <li>Demonstrated adaptability by consistently applying skills across various domains and technologies.</li>
-                  <li>Worked closely with foreign clients, maintaining effective and clear communication to meet project goals and ensure client satisfaction.</li>
-                </ul>
+          <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100">
+            <h4 class="exp-company">
+              <a href="https://efitosolutions.com/" target="_blank" style="color:#12d640;">Efito Solutions (Pvt) Ltd.</a>
+            </h4>
+
+            <div class="mb-3">
+              <span class="exp-role-badge">Software Engineer</span>
+              <span class="promotion-badge">↑ Promoted</span>
+              <span class="exp-period">November 2024 – Present</span>
+              <p class="exp-description">Promoted to Software Engineer, leading international client projects involving complex third-party integrations, team coordination, end-to-end backend development, and server configuration and deployment on Linux across e-commerce, healthcare, and restaurant domains.</p>
+              <ul class="exp-bullets text-left mt-3">
+                <li>Developed admin panel and RESTful APIs for <strong>Toner Connect</strong> (tonerconnect.net, admin.tonerconnect.net), a US-based toner buyback platform serving <strong>7,000+ businesses</strong>, using Laravel and Node.js with MySQL.</li>
+                <li>Integrated <strong>Fishbowl ERP</strong> data sync, <strong>eBay Marketplace API</strong> for multi-channel order handling, and <strong>UPS Shipping API</strong> for automated label generation and real-time shipment tracking.</li>
+                <li>Led POS, inventory, and billing module development for <strong>FanBudget</strong>(fanbudget.lk) restaurant management platform using React, Node.js, and MongoDB.</li>
+                <li>Led development team to build and enhance <strong>Lavni</strong>(mylavni.com), a US mental health platform connecting users with licensed therapists, delivering therapist discovery and insurance-covered telehealth features.</li>
+              </ul>
+              <div class="exp-tech-stack">
+                <span class="tech-pill">Laravel</span>
+                <span class="tech-pill">Node.js</span>
+                <span class="tech-pill">React.js</span>
+                <span class="tech-pill">MySQL</span>
+                <span class="tech-pill">MongoDB</span>
+                <span class="tech-pill">eBay API</span>
+                <span class="tech-pill">UPS API</span>
+                <span class="tech-pill">Fishbowl ERP</span>
+                <span class="tech-pill">Linux</span>
               </div>
+            </div>
 
-              <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100">
-                <h4 style="text-align:left;"><a href="https://zincat.net/" style="color:#12d640">Zincat Technology</a><br> </h4>
-                <h5 style="text-align:left;">April 2022 - September 2022</h5>
-                <p style="text-align:left;color:#fff"><em>Role: Software Engineer - Internship</em></p>
-                <p style="text-align:left;color:#b1a9a9">Experiences: </p>
-                <ul style="text-align:left;">
-                  <li>Developed and maintained well-organized, object-oriented code using best practices for a client project involving an e-commerce platform.</li>
-                  <li>Hands-on experience in full stack development.</li>
-                </ul>
+            <hr>
+
+            <div class="mb-2">
+              <span class="exp-role-badge">Associate Software Engineer</span>
+              <span class="exp-period">April 2023 – October 2024</span>
+              <p class="exp-description">Contributed to full-stack development across multiple international client projects, applying MVC architecture, RESTful API design, and database optimization across e-commerce, food delivery, healthcare, and AI-powered domains.</p>
+              <ul class="exp-bullets text-left mt-3">
+                <li>Applied full-stack development skills using Laravel (PHP) with MVC architecture, RESTful API development, routing, middleware, and authentication.</li>
+                <li>Contributed to database design, querying, and optimization to ensure efficient data management.</li>
+                <li>Delivered <strong>Pizzango</strong> (Germany), a multi-restaurant ordering and delivery system comprising 3 mobile apps, 2 admin panels, and 1 website with real-time order tracking and secure payment processing.</li>
+                <li>Implemented a machine learning-powered partner recommendation engine at <strong>Mindada.lk</strong> using Python, replacing rule-based matching with personalized recommendations.</li>
+                <li>Worked closely with foreign clients, maintaining effective communication to meet project goals and ensure client satisfaction.</li>
+              </ul>
+              <div class="exp-tech-stack">
+                <span class="tech-pill">Laravel</span>
+                <span class="tech-pill">Node.js</span>
+                <span class="tech-pill">React.js</span>
+                <span class="tech-pill">Flutter</span>
+                <span class="tech-pill">MySQL</span>
+                <span class="tech-pill">MongoDB</span>
+                <span class="tech-pill">Python</span>
               </div>
-
-              <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100">
-                <h4 style="text-align:left;"><a href="https://westgateinteriordesign.com/project/mas-holdings-ayathi" style="color:#12d640">MAS Holding - Ayathi Project</a><br> </h4>
-                <h5 style="text-align:left;">January 2017 - August 2017</h5>
-                <p style="text-align:left;color:#fff"><em>Inventory Controller</em></p>
-                <ul style="text-align:left;">
-                  <li>I have been provided my services to Aklit construction Pvt Ltd company to as an internal employee. (Project: MAS Holdings - Ayathi Project | Address: Lot 5 B, Block A, Biyagama Export Processing Zone, Walgama, Malwana)</li>
-                </ul>
-              </div>
-
+            </div>
           </div>
+
+          <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100">
+            <h4 class="exp-company">
+              <a href="https://zincat.net/" target="_blank" style="color:#12d640;">Zincat Technology</a>
+            </h4>
+            <span class="exp-role-badge">Software Engineer – Internship</span>
+            <span class="exp-period">April 2022 – October 2022</span>
+            <ul class="exp-bullets mt-3 text-left">
+              <li>Developed and maintained well-organized, object-oriented code using best practices for a client project involving an e-commerce platform.</li>
+              <li>Gained hands-on full-stack development experience across frontend and backend layers within an agile team environment.</li>
+            </ul>
+          </div>
+
+          <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100">
+            <h4 class="exp-company">
+              <a href="https://westgateinteriordesign.com/project/mas-holdings-ayathi" target="_blank" style="color:#12d640;">MAS Holdings – Ayathi Project</a>
+            </h4>
+            <span class="exp-role-badge">Inventory Controller</span>
+            <span class="exp-period">January 2017 – August 2017</span>
+            <ul class="exp-bullets mt-2">
+              <li>Provided inventory control services to Aklit Construction Pvt Ltd at the MAS Holdings Ayathi Project, Biyagama Export Processing Zone.</li>
+            </ul>
+          </div>
+
         </div>
+      </div>
     </div>
 
-    <div class="container">
+    <div class="container mt-4">
       <div class="section-title">
         <h2>Volunteer</h2>
       </div>
       <div class="row">
-          <div class="col-lg-12" data-aos="fade-up">
-              <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100">
-                <h4 style="text-align:left;"><a href="https://www.facebook.com/nccsl" style="color:#12d640">Sri Lanka Army Cadet - 1<sup>st</sup> NCC Battalion</a><br> </h4>
-                <h5 style="text-align:left;">March 2011 - October 2012</h5>
-                <p style="text-align:left;color:#fff"><em>Cadet</em></p>
-                <ul style="text-align:left;">
-                  <li>The National Cadet Corps (NCC) is a youth organisation in Sri Lanka, sponsored by the Ministry of Defence, which operates in schools, and normally includes Army, Navy and Air Force sections.</li>
-                  <li>I have received basic military training in small arms and parades, as well as leadership training.</li>
-                  <li>It helped improve my personality and calmness</li>
-                </ul>
-              </div>
+        <div class="col-lg-12" data-aos="fade-up">
 
-              <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100">
-                <h4 style="text-align:left;"><a href="https://www.facebook.com/uwuieee" style="color:#12d640">IEEE Uva Wellassa University Student Branch</a><br> </h4>
-                <h5 style="text-align:left;">June 2019 - August 2022</h5>
-                <p style="text-align:left;color:#fff"><em>Member</em></p>
-                <ul style="text-align:left;">
-                  <li>IEEE was initiated in 2015 at Uva Wellassa University student branch is a key technological society governed under the Faculty of Applied Sciences.</li>
-                  <li>I have participated in many Awareness Programs, Hackathons and IEEE day programs</li>
-                </ul>
-              </div>
-
-              <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100">
-                <h4 style="text-align:left;"><a href="https://mozillauwu.github.io" style="color:#12d640">Mozilla Campus Club - UWU</a><br> </h4>
-                <h5 style="text-align:left;">January 2018 - August 2022</h5>
-                <p style="text-align:left;color:#fff"><em>Member</em></p>
-                <ul style="text-align:left;">
-                  <li>Mozilla Campus Club - UWU is a community organization which supports students to contribute Free and Open Source Software (FOSS) projects to make global web better.</li>
-                  <li>When I was a member of this community, participated in many Awareness Programs, Hackathons, Workshops</li>
-                </ul>
-              </div>
-
-              <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100">
-                <h4 style="text-align:left;"><a href="https://fas.uwu.ac.lk/computer-society-of-uwu/" style="color:#12d640">Computer Society of Uva Wellassa University</a><br> </h4>
-                <p style="text-align:left;color:#fff"><em>Member</em> (May 2018 - May 2020)</p>
-                <p style="text-align:left;color:#fff"><em>Secretary</em> (May 2020 - August 2022)</p>
-                <ul style="text-align:left;">
-                  <li>The main objective of the computer society is to aid the undergraduates of the university to improve their technical knowledge which will undoubtedly help them when they reach the industry training period.</li>
-                  <li>When I was a member of this community, participated in many Awareness Programs, Workshops.</li>
-                  <li>As well as has organized a Hackathon (DeftCoders - v8.0)</li>
-                </ul>
-              </div>
-
+          <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100">
+            <h4 style="text-align:left;"><a href="https://www.facebook.com/nccsl" target="_blank" style="color:#12d640;">Sri Lanka Army Cadet – 1<sup>st</sup> NCC Battalion</a></h4>
+            <h5 style="text-align:left;">March 2011 – October 2012 | <em style="color:#fff;">Cadet</em></h5>
+            <ul style="text-align:left;">
+              <li>Received basic military training including small arms, parades, and leadership development.</li>
+            </ul>
           </div>
+
+          <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100">
+            <h4 style="text-align:left;"><a href="https://www.facebook.com/uwuieee" target="_blank" style="color:#12d640;">IEEE Uva Wellassa University Student Branch</a></h4>
+            <h5 style="text-align:left;">June 2019 – August 2022 | <em style="color:#fff;">Member</em></h5>
+            <ul style="text-align:left;">
+              <li>Participated in Awareness Programs, Hackathons, and IEEE Day programs.</li>
+            </ul>
+          </div>
+
+          <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100">
+            <h4 style="text-align:left;"><a href="https://mozillauwu.github.io" target="_blank" style="color:#12d640;">Mozilla Campus Club – UWU</a></h4>
+            <h5 style="text-align:left;">January 2018 – August 2022 | <em style="color:#fff;">Member</em></h5>
+            <ul style="text-align:left;">
+              <li>Contributed to FOSS projects and participated in Awareness Programs, Hackathons, and Workshops.</li>
+            </ul>
+          </div>
+
+          <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100">
+            <h4 style="text-align:left;"><a href="https://fas.uwu.ac.lk/computer-society-of-uwu/" target="_blank" style="color:#12d640;">Computer Society of Uva Wellassa University</a></h4>
+            <p style="text-align:left;color:#fff;"><em>Member</em> (May 2018 – May 2020) &nbsp;|&nbsp; <em>Secretary</em> (May 2020 – August 2022)</p>
+            <ul style="text-align:left;">
+              <li>Organized DeftCoders Hackathon v8.0 and participated in Awareness Programs and Workshops.</li>
+            </ul>
+          </div>
+
         </div>
+      </div>
     </div>
-
   </section>
-  <!-- End Experience Section -->
 
-
-  <!-- Start Project Section -->
   <section id="portfolio" class="portfolio">
     <div class="container">
-
       <div class="section-title">
         <h2>Projects</h2>
+        <p>My Work</p>
       </div>
 
       <div class="alert alert-secondary">
-        <small><strong>Note that, </strong>I have compiled a list solely comprising projects that I independently initiated or accomplished during my university tenure, while omitting any projects associated with previous or current professional endeavors.</small>
+        <small><strong>Note:</strong> This section showcases personal and university projects. Professional client work is detailed in the Experience section above.</small>
       </div>
 
       <div class="row">
         <div class="col-lg-12 d-flex justify-content-center">
           <ul id="portfolio-flters">
             <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-project-commercial">Projects - Commercial</li>
-            <li data-filter=".filter-project-university">Projects - University</li>
-            <li data-filter=".filter-ui-ux">UI & UX</li>
+            <li data-filter=".filter-project-commercial">Commercial</li>
+            <li data-filter=".filter-project-university">University</li>
+            <li data-filter=".filter-ui-ux">UI &amp; UX</li>
             <li data-filter=".filter-research">Research</li>
           </ul>
         </div>
@@ -420,9 +785,9 @@
       <div class="row portfolio-container">
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-project-commercial">
-          <center><h4>Ridee Viharaya Temple official website - Rideegama, Kurunagala, Sri Lanka</h4></center>
+          <center><h4>Ridee Viharaya Temple Official Website – Sri Lanka</h4></center>
           <div class="portfolio-wrap">
-            <img src="assets/img/project/ridee-viharaya.png" class="img-fluid" alt="">
+            <img src="assets/img/project/ridee-viharaya.png" class="img-fluid" alt="Ridee Viharaya Temple website project">
             <div class="portfolio-info">
               <div class="portfolio-links">
                 <a href="projects/ridee-viharaya.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Project Details"><i class="bx bx-info-circle"></i></a>
@@ -432,9 +797,9 @@
         </div>
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-project-commercial">
-          <center><h4>CESTour - Centers of excellence in sustainable tourism</h4></center>
+          <center><h4>CESTour – Centres of Excellence in Sustainable Tourism</h4></center>
           <div class="portfolio-wrap">
-            <img src="assets/img/project/cestour.png" class="img-fluid" alt="">
+            <img src="assets/img/project/cestour.png" class="img-fluid" alt="CESTour sustainable tourism project">
             <div class="portfolio-info">
               <div class="portfolio-links">
                 <a href="projects/cestour.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Project Details"><i class="bx bx-info-circle"></i></a>
@@ -443,34 +808,10 @@
           </div>
         </div>
 
-        <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-project-university">
-          <center><h4>H2BIS ERP Web Based System (Tamil Union C & AC) - Zincat Technology</h4></center>
-          <div class="portfolio-wrap">
-            <img src="assets/img/project/h2bis.png" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <div class="portfolio-links">
-                <a href="projects/h2bis.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Project Details"><i class="bx bx-info-circle"></i></a>
-              </div>
-            </div>
-          </div>
-        </div> -->
-
-        <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-project-university">
-          <center><h4>Outboard Jet Japan (OJJ) Boat Company Website - Zincat Technology</h4></center>
-          <div class="portfolio-wrap">
-            <img src="assets/img/project/ojj.png" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <div class="portfolio-links">
-                <a href="projects/ojj.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Project Details"><i class="bx bx-info-circle"></i></a>
-              </div>
-            </div>
-          </div>
-        </div> -->
-
         <div class="col-lg-4 col-md-6 portfolio-item filter-project-university">
-          <center><h4>Hotel Management System for Ramifyo Coco Beach Resort (Pvt) Ltd.</h4></center>
+          <center><h4>Hotel Management System – Ramifyo Coco Beach Resort</h4></center>
           <div class="portfolio-wrap">
-            <img src="assets/img/project/ramifiyo.png" class="img-fluid" alt="">
+            <img src="assets/img/project/ramifiyo.png" class="img-fluid" alt="Hotel management system project">
             <div class="portfolio-info">
               <div class="portfolio-links">
                 <a href="projects/ramifiyo.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Project Details"><i class="bx bx-info-circle"></i></a>
@@ -480,9 +821,9 @@
         </div>
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-project-university">
-          <center><h4>Centre for Open and Distance Learning Information Management System</h4></center>
+          <center><h4>CODL Information Management System</h4></center>
           <div class="portfolio-wrap">
-            <img src="assets/img/project/codl.png" class="img-fluid" alt="">
+            <img src="assets/img/project/codl.png" class="img-fluid" alt="Centre for Open and Distance Learning IMS">
             <div class="portfolio-info">
               <div class="portfolio-links">
                 <a href="projects/codl.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Project Details"><i class="bx bx-info-circle"></i></a>
@@ -492,9 +833,9 @@
         </div>
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-project-university">
-          <center><h4>Medicine Ordering and Healthcare Services System During the Pandemic</h4></center>
+          <center><h4>Medicine Ordering &amp; Healthcare Services During Pandemic</h4></center>
           <div class="portfolio-wrap">
-            <img src="assets/img/project/medicine.png" class="img-fluid" alt="">
+            <img src="assets/img/project/medicine.png" class="img-fluid" alt="Medicine ordering healthcare system">
             <div class="portfolio-info">
               <div class="portfolio-links">
                 <a href="projects/medicine.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Project Details"><i class="bx bx-info-circle"></i></a>
@@ -504,9 +845,9 @@
         </div>
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-research">
-          <center><h4>Covid-19 Prevention System Using Computer Vision Technologies</h4></center>
+          <center><h4>Covid-19 Prevention System Using Computer Vision</h4></center>
           <div class="portfolio-wrap">
-            <img src="assets/img/project/research.png" class="img-fluid" alt="">
+            <img src="assets/img/project/research.png" class="img-fluid" alt="Covid-19 prevention computer vision research">
             <div class="portfolio-info">
               <div class="portfolio-links">
                 <a href="projects/research.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Project Details"><i class="bx bx-info-circle"></i></a>
@@ -516,9 +857,9 @@
         </div>
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-ui-ux">
-          <center><h4>Sisulka Online Education Mobile Application (UI & UX Design)</h4></center>
+          <center><h4>Sisulka Online Education Mobile App (UI &amp; UX)</h4></center>
           <div class="portfolio-wrap">
-            <img src="assets/img/project/sisulka.png" class="img-fluid" alt="">
+            <img src="assets/img/project/sisulka.png" class="img-fluid" alt="Sisulka online education app UI UX design">
             <div class="portfolio-info">
               <div class="portfolio-links">
                 <a href="projects/sisulka.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Project Details"><i class="bx bx-info-circle"></i></a>
@@ -530,92 +871,21 @@
       </div>
     </div>
   </section>
-  <!-- End Project Section -->
-
-
-  <!-- Start Skills Section -->
-  <section id="skills" class="services">
-    <div class="container">
-      <div class="section-title">
-        <h2>Skills</h2>
-      </div>
-      <div class="row">
-        <div class="col-lg-12" data-aos="fade-up">
-          <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100" style="background:#fff">
-            <h4 style="text-align:left;color:#09203a">Front-end Development</h4>
-              <p style="text-align:left;">
-                <img src="https://www.vectorlogo.zone/logos/reactjs/reactjs-ar21.svg" alt="vectorlogo.zone" height="60" width="120">
-                <img src="https://www.vectorlogo.zone/logos/javascript/javascript-horizontal.svg" alt="vectorlogo.zone" height="50" width="120">
-                <img src="https://www.vectorlogo.zone/logos/java/java-horizontal.svg" alt="vectorlogo.zone" height="50" width="120">
-                <img src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-ar21.svg" alt="vectorlogo.zone">
-                <img src="https://www.vectorlogo.zone/logos/w3_css/w3_css-ar21.svg" alt="upload.wikimedia.org" height="60" width="90">
-                <img src="https://www.vectorlogo.zone/logos/getbootstrap/getbootstrap-ar21.svg" alt="vectorlogo.zone">
-              </p>
-          </div>
-
-          <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100" style="background:#fff">
-            <h4 style="text-align:left;color:#09203a">Back-end Development</h4>
-              <p style="text-align:left;">
-                <img src="https://www.vectorlogo.zone/logos/nodejs/nodejs-horizontal.svg" alt="vectorlogo.zone">
-                <img src="https://www.vectorlogo.zone/logos/laravel/laravel-ar21.svg" alt="vectorlogo.zone">
-                <img src="https://www.vectorlogo.zone/logos/php/php-horizontal.svg" alt="vectorlogo.zone" height="50" width="120">
-                <img src="https://www.vectorlogo.zone/logos/java/java-horizontal.svg" alt="vectorlogo.zone" height="50" width="120">
-              </p>
-          </div>
-
-          <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="lefade-up" data-aos-delay="100" style="background:#fff">
-            <h4 style="text-align:left;color:#09203a">Databases Management</h4>
-              <p style="text-align:left;">
-                <img src="https://www.vectorlogo.zone/logos/mysql/mysql-horizontal.svg" alt="vectorlogo.zone" height="70" width="130">
-                <img src="https://www.vectorlogo.zone/logos/mongodb/mongodb-ar21.svg" alt="vectorlogo.zone">
-              </p>
-          </div>
-
-          <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="lefade-up" data-aos-delay="100" style="background:#fff">
-            <h4 style="text-align:left;color:#09203a">Software Modeling, Designing and Version Control</h4>
-              <p style="text-align:left;">
-                <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-ar21.svg" alt="vectorlogo.zone">
-                <img src="https://www.vectorlogo.zone/logos/figma/figma-ar21.svg" alt="vectorlogo.zone">
-                <img src="https://www.vectorlogo.zone/logos/balsamiq/balsamiq-ar21.svg" alt="vectorlogo.zone">
-                <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-ar21.svg" alt="vectorlogo.zone">&nbsp;&nbsp;&nbsp;
-                <img src="assets/vendor/api.png" width="60px" height="55px" alt="">
-              </p>
-          </div>
-
-          <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="lefade-up" data-aos-delay="100" style="background:#fff">
-            <h4 style="text-align:left;color:#09203a">Operating Systems</h4>
-              <p style="text-align:left;">
-                <img src="assets/vendor/windows.png" width="50px" height="50px" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <img src="assets/vendor/linux.png" width="50px" height="60px" alt="">
-              </p>
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- End Skills Section -->
-
-
-  <!-- Start Contact Section -->
 
   <section id="contacts" class="contact">
     <div class="container">
-
       <div class="section-title">
         <h2>Contact</h2>
+        <p>Get In Touch</p>
       </div>
-
       <div class="row mt-2 justify-content-center">
 
         <div class="col-md-6 d-flex align-items-stretch">
           <div class="info-box">
             <i class="bx bx-map"></i>
             <h3>My Address</h3>
-            <p>Gurusinghe Sameera Udayanga,</p>
-            <p>**. ***, ******** ****, *********,</p>
-            <p>Southern Province,</p>
-            <p>Sri Lanka</p>
+            <p>Gurusinghe Sameera Udayanga</p>
+            <p>Elpitiya, Southern Province, Sri Lanka</p>
           </div>
         </div>
 
@@ -624,9 +894,9 @@
             <i class="bx bx-share-alt"></i>
             <h3>Social Profiles</h3>
             <div class="social-links">
-              <a href="https://www.linkedin.com/in/sameeragurusinghe" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-              <a href="https://www.github.com/sameeragurusinghe" target="_blank" class="github"><i class="bx bxl-github"></i></a>
-              <a href="https://www.facebook.com/sameeragurusinghe" target="_blank" class="facebook"><i class="bx bxl-facebook"></i></a>
+              <a href="https://www.linkedin.com/in/sameeragurusinghe" target="_blank" class="linkedin" aria-label="LinkedIn"><i class="bx bxl-linkedin"></i></a>
+              <a href="https://www.github.com/sameeragurusinghe" target="_blank" class="github" aria-label="GitHub"><i class="bx bxl-github"></i></a>
+              <a href="https://www.facebook.com/sameeragurusinghe" target="_blank" class="facebook" aria-label="Facebook"><i class="bx bxl-facebook"></i></a>
             </div>
           </div>
         </div>
@@ -635,7 +905,7 @@
           <div class="info-box">
             <i class="bx bx-envelope"></i>
             <h3>Email</h3>
-            <p>sameeragurusinghe1@gmail.com</p>
+            <p><a href="mailto:sameeragurusinghe1@gmail.com">sameeragurusinghe1@gmail.com</a></p>
           </div>
         </div>
 
@@ -651,18 +921,14 @@
           <div class="info-box">
             <i class="bx bx-scan"></i>
             <h3>Scan Me</h3>
-            <p><img src="assets/img/qr.png" alt="QR code"></p>
+            <p><img src="assets/img/qr.png" alt="QR code to Sameera Gurusinghe portfolio"></p>
           </div>
         </div>
-        
-      </div>
 
+      </div>
     </div>
   </section>
-  <!-- End Contact Section -->
 
-
-  <!-- Vendor JS Files -->
   <script src="assets/vendor/jquery/jquery.min.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
@@ -673,27 +939,31 @@
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/venobox/venobox.min.js"></script>
   <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script src="assets/js/main.js"></script>
+
   <script type="text/javascript">
-    var typed = new Typed('.typing',{
-      strings: ["Hi...", "Welcome to my space !", "Glad to have you here"],
+    var typed = new Typed('.typing', {
+      strings: [
+        "Software Engineer",
+        "Full-Stack Developer",
+        "API Integration Specialist",
+        "Building for the USA, Germany"
+      ],
       loop: true,
-      typeSpeed: 65,
-      backSpeed: 65
+      typeSpeed: 60,
+      backSpeed: 40,
+      backDelay: 1800
     });
 
-    $(document).ready(function(){
-      $('[data-toggle="tooltip"]').tooltip();   
+    $(document).ready(function() {
+      $('[data-toggle="tooltip"]').tooltip();
     });
-    
+
     var dt = new Date();
-    document.getElementById("date").innerHTML=dt.toLocaleString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
-
+    document.getElementById("date").innerHTML = dt.toLocaleDateString('en-US', {
+      year: 'numeric', month: 'long', day: 'numeric'
+    });
   </script>
 
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-  <!-- <script src="assets/js/snow.js"></script> -->
-
 </body>
-
 </html>
